@@ -4,9 +4,9 @@ const admin: {
     userName: string,
     email: string,
     isActive: boolean,
-    experience: number,
-    company: string,
-    Location: string
+    experience?: number,  //optional type
+    company: "Console Loggers",  //console loggers is considered as a type
+    readonly Location: string   //can not change 'readonly' value. it is called 'literal' type
 } = {
     userName: "Siam",
     email: "siam@gmail.com",
@@ -15,3 +15,7 @@ const admin: {
     company: "Console Loggers",
     Location: "Chittagong"
 }
+
+
+
+// admin.Location = "Dhaka"; 
