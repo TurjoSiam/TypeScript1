@@ -14,4 +14,5 @@ const {route: {west}} = transport;
 
 //array destructuring
 const bus = ["star line", "green line", "super sony"];
-const [,fav] = bus;
+
+const [, fav] = bus;
