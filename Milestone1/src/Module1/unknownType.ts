@@ -1,15 +1,15 @@
 {
     //unknown type
-    const speedOfCar = (value: unknown): number => {
+    const speedOfCar = (value: unknown): number | undefined => {
         if (typeof value === "number") {
             const result = (value * 1000) / 3600;
-            console.log(result);
+            return result;
         }
         else if (typeof value === "string") {
             const convertedValue = value.split(" ");
             const speed = convertedValue[0];
             const result = parseFloat(speed);
-            console.log((result * 1000) / 3600);
+            return result
         }
         else {
             console.log("wrong input");
