@@ -1,9 +1,8 @@
 {
 
-    const findingPropertyValue = (value, key) => {
+    const findingPropertyValue = <T, Y extends keyof T>(value: T, key: Y) => {
         return value[key];
     }
-
 
 
     type User = {
@@ -22,7 +21,8 @@
     }
 
 
-    const result = findingPropertyValue(user, "progress")
+    const result = findingPropertyValue<User, "progress">(user, "progress");
+    console.log(result);
 
 
 
