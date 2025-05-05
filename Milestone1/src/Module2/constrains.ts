@@ -3,7 +3,7 @@
     const assigningTitle = <T extends { user: string; age: number }>(value: T): {} => {
         return {
             ...value,
-            title: "web developer"
+            title: "web developer",
         };
     };
 
