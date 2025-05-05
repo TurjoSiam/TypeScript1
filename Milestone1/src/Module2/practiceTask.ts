@@ -24,6 +24,43 @@ const obj: Obj = {
 console.log(task2<Obj>(obj));
 
 
-//task3
+{
+    //task3
+
+    type Person = {
+        name: string;
+        address: string;
+        hairColor: string;
+        eyeColor: string;
+        income: number;
+        expense: number;
+        hobbies: string[];
+        familyMembers: string[];
+        job: string;
+        skills: string[];
+        maritalStatus: boolean;
+        friends: string[]
+    }
+}
+
+{
+    //task 4
+    interface Book {
+        name: string;
+        page: number;
+        isAvailable: boolean;
+    }
+
+    interface Magazine {
+        cover: boolean;
+        page: number;
+        price: number;
+    }
+
+    type BookMag = Book & Magazine;
+
+    type MagBook = Magazine | Book;
+
+}
 
 
