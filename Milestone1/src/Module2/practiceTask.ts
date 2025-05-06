@@ -175,6 +175,24 @@ const obj: Obj = {
         }
     }
 
-    console.log(processData(data));
+    // console.log(processData(data));
 
+}
+
+{
+    //task 12
+    const errMsg = (value: string): never => {
+        throw new Error(value);
+    }
+}
+
+{
+    //task 13
+    const recArr = (value: any[]): any[] => {
+        const arrDup = value.filter((element, index, arr) => arr.indexOf(element) === index);
+        return arrDup
+    };
+
+    const data = [3, "hello", 3, 5, 6, "hello"]
+    console.log(recArr(data));
 }
