@@ -128,5 +128,23 @@ const obj: Obj = {
 
 {
     //task 9
+    type Employee = {
+        name: string;
+        age: number;
+        city: string
+    }
 
+    const employee = {
+        name: "siam",
+        age: 29,
+        city: "Feni"
+    }
+
+    const getEmployeeCity = (value: Employee): string => {
+        return value?.city;
+    }
+
+    console.log(getEmployeeCity(employee));
 }
+
+
