@@ -21,7 +21,7 @@ const obj: Obj = {
     role: "admin"
 }
 
-console.log(task2<Obj>(obj));
+// console.log(task2<Obj>(obj));
 
 
 {
@@ -60,6 +60,24 @@ console.log(task2<Obj>(obj));
     type BookMag = Book & Magazine;
 
     type MagBook = Magazine | Book;
+}
+{
+    //task 5
+
+    const revStr = (value: string): string => {
+        const newStr = value.split("").reverse().join("");
+        return newStr;
+    };
+
+    console.log(revStr("bangladesh"));
+}
+
+{
+
+
+
+
+
 
 }
 
