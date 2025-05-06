@@ -149,12 +149,32 @@ const obj: Obj = {
 
 {
     //task 10
-    const name: string = null;
+    const name: string = "Siam";
 
     const getDisplayName = (value: string | undefined | null): string => {
         return value ?? "Anonymous";
     }
 
-    console.log(getDisplayName(name));
+    // console.log(getDisplayName(name));
+
+}
+
+{
+    //task 11
+    const data: string = "Laptop";
+
+    const processData = (value: unknown): number | string => {
+        if (typeof value === "number") {
+            return value * value;
+        }
+        else if (typeof value === "string") {
+            return value.toUpperCase();
+        }
+        else {
+            return "Invalid input"
+        }
+    }
+
+    console.log(processData(data));
 
 }
