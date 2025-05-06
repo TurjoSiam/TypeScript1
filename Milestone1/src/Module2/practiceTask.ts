@@ -96,8 +96,37 @@ const obj: Obj = {
             return "invalid input"
         }
     }
-    console.log(newFunc("hello"));
+    // console.log(newFunc("hello"));
 
 }
 
+{
+    //task 8
+    type User = {
+        name: string;
+        email: string;
+    }
 
+    type Admin = {
+        adminLevel: number;
+    }
+
+    type AdminUser = User & Admin
+
+    const describeAdmin = (value: AdminUser): string => {
+        return `Mr ${value.name} with email ${value.email} is our level${value.adminLevel} manager`
+    }
+
+    const manager: AdminUser = {
+        name: "siam",
+        email: "siam@gmail.com",
+        adminLevel: 3
+    }
+
+    // console.log(describeAdmin(manager));
+}
+
+{
+    //task 9
+
+}
