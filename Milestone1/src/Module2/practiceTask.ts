@@ -79,7 +79,24 @@ const obj: Obj = {
         return total;
     }
 
-    console.log(sum(5, 6, 7, 8));
+    // console.log(sum(5, 6, 7, 8));
+
+}
+
+{
+    //task 7
+    const newFunc = (value: number | string): number | string => {
+        if (typeof value === "string") {
+            return value.length;
+        }
+        else if (typeof value === "number") {
+            return value * value;
+        }
+        else {
+            return "invalid input"
+        }
+    }
+    console.log(newFunc("hello"));
 
 }
 
