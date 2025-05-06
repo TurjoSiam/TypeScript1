@@ -144,7 +144,17 @@ const obj: Obj = {
         return value?.city;
     }
 
-    console.log(getEmployeeCity(employee));
+    // console.log(getEmployeeCity(employee));
 }
 
+{
+    //task 10
+    const name: string = null;
 
+    const getDisplayName = (value: string | undefined | null): string => {
+        return value ?? "Anonymous";
+    }
+
+    console.log(getDisplayName(name));
+
+}
