@@ -69,15 +69,17 @@ const obj: Obj = {
         return newStr;
     };
 
-    console.log(revStr("bangladesh"));
+    // console.log(revStr("bangladesh"));
 }
 
 {
+    //task 6
+    const sum = (...value: number[]): number => {
+        const total = value.reduce((prev: number, curr: number) => prev + curr, 0);
+        return total;
+    }
 
-
-
-
-
+    console.log(sum(5, 6, 7, 8));
 
 }
 
