@@ -194,5 +194,16 @@ const obj: Obj = {
     };
 
     const data = [3, "hello", 3, 5, 6, "hello"]
-    console.log(recArr(data));
+    // console.log(recArr(data));
 }
+
+{
+    //task 14
+    // const fetchData = async(): Promise<> => {
+    //     await new Promise((resolve => setTimeout(() => {
+    //         resolve
+    //     }, 2000)))
+    //     }
+
+}
+
